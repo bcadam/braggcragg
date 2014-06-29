@@ -38,15 +38,15 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <!--<div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
+                    <div class="col-md-8 col-md-offset-2">
+                        <!--<h1 class="brand-heading" data-scroll-reveal="wait 1.5s enter left and move 200px over 1s">July 2015</h1>
                         <p class="intro-text">A free, premium quality, responsive one page Bootstrap theme created by Start Bootstrap.</p>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
-                        </div>
-                    </div>-->
+                        </div>-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                 <p>Grayscale is a premium quality, free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, all you need to do is download the template on the preview page. You can use this template for any purpose, personal or commercial.</p>
                 <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
                 <p>With this template, just the slightest splash of color can make a huge impact on the overall presentation and design.</p>-->
-                <div class="well col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-1" data-scroll-reveal="enter left and move 50px over 1.33s">
+                <div class="well col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="enter left and move 50px over 1.33s">
                     <center>
                     <a href="#adamModal" data-toggle="modal" data-target="#adamModal"><%= image_tag('adamholi150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %></a>
                     <h3>Adam Cragg</h3>
@@ -67,12 +67,16 @@
                     </center>
                 </div>
 
-                <div class="well col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-1" data-scroll-reveal="enter right and move 50px over 1.33s">
+                <div class="well col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="enter right and move 50px over 1.33s">
                     <center>
                     <a href="#meredithModal" data-toggle="modal" data-target="#meredithModal"><%= image_tag('meredithran150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %></a>
                     <h3>Meredith Bragg</h3>
                     <em>click my face for more</em>
                     </center>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12" data-scroll-reveal="wait 0.3s, then enter bottom and move 100px over 2s">
+                <%= image_tag('pig.gif', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %>
                 </div>
 
                 <!-- Adam Modal -->
