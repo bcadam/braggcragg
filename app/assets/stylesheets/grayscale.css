@@ -253,6 +253,8 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    -webkit-filter: grayscale(100%) blur(0px);
 }
 
 #map {
