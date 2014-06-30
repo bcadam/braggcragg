@@ -1,3 +1,21 @@
+<script type="text/javascript">
+Parse.initialize("tmbHbRvyZ5tjZ6LdLliNRu0novLMVKGhxiNkivNw", "jRKtFNLAC7k1uEKrtUuvi5ECeja9yHukEuljiZ6o");
+
+function submitGuest()
+{
+    var useremail = $( "#Email" ).val();
+    var username = $( "#name" ).val();
+    var usermessage = $( "#message" ).val();
+
+    var guestObject = Parse.Object.extend("Guest");
+    var guestObject = new guestObject();
+    guestObject.save({name: username, email:useremail, message:usermessage}).then(function(object) {
+        //alert("it worked");
+
+    $('#contact').css('display','none');
+});
+}
+</script>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -91,8 +109,8 @@
 
                 
 
-                <div class="" id="accordion" style="border:0px;">
-  <div class="panel" style="border:0px;">
+    <div class="" id="accordion" style="border:0px;">
+    <div class="panel" style="border:0px;">
     <div id="nineYears" class="panel-collapse collapse">
       <div class="panel-body" style="border:0px;">
         <div class="row">
@@ -377,13 +395,15 @@
                         <input type="email" class="form-control" id="Email" placeholder="Email" required/>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+                        <textarea class="form-control" rows="3" placeholder="Message" id="message" required></textarea>
                     </div>
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-danger btn-sm btn-block" role="button">Send it!</a>
+                    <a href="#about" class="btn btn-danger btn-sm btn-block" role="button" onclick="submitGuest();">Send it!</a>
                 </div>
                 </form>
             </div>
         </div>
+
+
     </section>
 
     <section id="map" class="container content-section text-center">
