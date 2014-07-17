@@ -246,15 +246,15 @@ a:focus {
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
-    background: url(ganges1850.jpg) no-repeat center center scroll;
+    color: black;
+    background: url(lake1850.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 
-    -webkit-filter: grayscale(100%) blur(0px);
+    //-webkit-filter: grayscale(100%) blur(0px);
 }
 
 #map {
