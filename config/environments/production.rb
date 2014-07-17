@@ -64,7 +64,6 @@ Braggcragg::Application.configure do
  config.assets.precompile += %w(*.js)
  # Replace %w( *.css *.js *.css.scss) with complex regexp avoiding SCSS partials compilation
  config.assets.precompile += [/^[^_]\w+\.(css|css.scss)$/]
- config.assets.precompile += ['*.css', '*.js']
  #Adding active_admin JS and CSS to the precompilation list
  config.assets.precompile += %w( active_admin.css active_admin.js active_admin/print.css )
   
