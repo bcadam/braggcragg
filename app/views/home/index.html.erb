@@ -70,6 +70,14 @@ function submitGuest()
         </div>
     </section>
 
+    <style type="text/css">
+        #about{
+            min-height:1200px !important;
+            background: rgb(255,255,255);
+            padding-top: 50px;
+            padding-bottom: -50px !important;
+        }
+    </style>
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -115,7 +123,7 @@ function submitGuest()
     <div id="nineYears" class="panel-collapse">
       <div class="panel-body" style="border:0px;">
         <div class="row">
-        <h4 class="modal-title" id="myModalLabel">9 years in the making</h4>
+        <h4 class="modal-title text-up" id="myModalLabel">9 years in the making</h4>
                 <!-- References: https://github.com/fancyapps/fancyBox -->
                         <link rel="stylesheet" href="http://frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
                         <script src="http://frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
@@ -137,11 +145,18 @@ function submitGuest()
                                 }
                         </style>
                         <div class='list-group gallery'>
+                        <style>
+                         .text-up
+                         {
+                            font-family:Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                            text-transform:uppercase;
+                        }
+                          </style>
                             <div class='col-sm-4 col-xs-6 col-md-4 col-lg-4'>
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/first.jpg">
                                     <%= image_tag('years/1x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year one</small>
+                                        <small class='text-muted text-up'>Year one</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> <!-- col-6 / end -->
@@ -149,7 +164,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/second.jpg">
                                     <%= image_tag('years/2x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year two</small>
+                                        <small class='text-muted text-up'>Year two</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> <!-- col-6 / end -->
@@ -157,7 +172,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/third.jpg">
                                     <%= image_tag('years/3x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year three</small>
+                                        <small class='text-muted text-up'>Year three</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> <!-- col-6 / end -->
@@ -165,7 +180,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/fourth.jpg">
                                     <%= image_tag('years/4x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year four</small>
+                                        <small class='text-muted text-up'>Year four</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> <!-- col-6 / end -->
@@ -173,7 +188,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/fifth.jpg">
                                     <%= image_tag('years/5x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year five</small>
+                                        <small class='text-muted text-up'>Year five</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> <!-- col-6 / end -->
@@ -181,7 +196,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/sixth.jpg">
                                     <%= image_tag('years/6x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year six</small>
+                                        <small class='text-muted text-up'>Year six</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> 
@@ -189,7 +204,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/seventh.jpg">
                                     <%= image_tag('years/7x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year seven</small>
+                                        <small class='text-muted text-up'>Year seven</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> 
@@ -197,7 +212,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/eighth.jpg">
                                     <%= image_tag('years/8x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year eight</small>
+                                        <small class='text-muted text-up'>Year eight</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> 
@@ -205,7 +220,7 @@ function submitGuest()
                                 <a class="thumbnail fancybox" rel="ligthbox" href="/assets/years/ninth.jpg">
                                     <%= image_tag('years/9x200.jpg', :class=>'img-responsive', :style=>"max-height:200px") %>
                                     <div class='text-right'>
-                                        <small class='text-muted'>Year nine</small>
+                                        <small class='text-muted text-up'>Year nine</small>
                                     </div> <!-- text-right / end -->
                                 </a>
                             </div> <!-- col-6 / end -->
@@ -316,6 +331,11 @@ function submitGuest()
                                 <hr>-->
                                 <center>
                                 <div class="row">
+                                <style type="text/css">
+                                a.thumbnail.fancybox {
+                                    border-style: none;
+                                }
+                                </style>
                                     <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/first.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
                                     <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/second.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
                                     <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/third.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
@@ -343,6 +363,14 @@ function submitGuest()
         </div>
     </section>
 
+    <style type="text/css">
+        #ceremony{
+            //min-height:1200px !important;
+            //background: rgb(255,255,255);
+            //padding-top: -50px;
+            //padding-bottom: -50px !important;
+        }
+    </style>
     <section id="ceremony" class="content-section text-center">
         <div class="download-section">
             <div class="container">
@@ -372,7 +400,12 @@ function submitGuest()
 
     <section id="contact" class="container content-section text-center" style="width:100%;height:100%;">
         <style type="text/css">
-        #contact{height:400px !important;background: rgb(255,255,255);}
+        #contact{
+            height:300px !important;
+            background: rgb(255,255,255);
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
         .get-in-touch {
             position: relative;
             margin: 0 auto;
