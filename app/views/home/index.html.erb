@@ -116,9 +116,9 @@ function submitGuest()
                 <div class="row">
 
                 <div class="" data-scroll-reveal="wait .8s, then enter right and move 200px over 1.5s">
-                <a href="#nineYears" data-toggle="collapse" data-parent="#accordion" href="#nineYears">
+                <div data-parent="#accordion" href="#nineYears">
                 <%= image_tag('pig.gif', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0', :id =>'flypig') %>
-                </a>
+                </div>
                 </div>
                 </div>
 
@@ -126,7 +126,7 @@ function submitGuest()
 
     <div class="" id="accordion" style="border:0px;">
     <div class="panel" style="border:0px;">
-    <div id="nineYears" class="panel-collapse collapse">
+    <div id="nineYears" class="panel-collapse">
       <div class="panel-body" style="border:0px;">
         <div class="row">
         <h4 class="modal-title text-up" id="myModalLabel">9 years in the making</h4>
@@ -134,14 +134,14 @@ function submitGuest()
                         <link rel="stylesheet" href="http://frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
                         <script src="http://frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
                         <script type="text/javascript">
-                            $(document).ready(function(){
+                           /** $(document).ready(function(){
                                 //FANCYBOX
                                 //https://github.com/fancyapps/fancyBox
                                 $(".fancybox").fancybox({
                                     openEffect: "none",
                                     closeEffect: "none"
                                 });
-                            });
+                            });**/
                         </script>
                         <style type="text/css">
                             .gallery
@@ -270,7 +270,7 @@ function submitGuest()
                             </div>
                             <div class="modal-footer">
                                 <center>
-                                <button type="button" class="btn btn-info" data-dismiss="modal">I've heard enough about Adam</button>
+                                <button type="button" class="btn btn-info" data-dismiss="modal"><div class="hidden-xs">I've heard enough about Adam</div><div class="visible-xs-*">Close</div></button>
                                 </center>
                             </div>
                         </div>
@@ -309,7 +309,7 @@ function submitGuest()
                             </div>
                             <div class="modal-footer">
                                 <center>
-                                <button type="button" class="btn btn-info" data-dismiss="modal">I've heard enough about Meredith</button>
+                                <button type="button" class="btn btn-info" data-dismiss="modal"><div class="hidden-xs">I've heard enough about Meredith</div><div class="visible-xs-*">Close</div></button>
                                 </center>
                             </div>
                         </div>
@@ -506,7 +506,7 @@ a.list-group-item.active.text-center {
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
               <div class="list-group">
                 <a href="#" class="list-group-item active text-center">
-                  <h4 class="glyphicon glyphicon-plane"></h4><br/>Flights
+                  <h4 class="glyphicon glyphicon-th-list"></h4><br/>Calgary to dos
                 </a>
                 <a href="#" class="list-group-item text-center">
                   <h4 class="glyphicon glyphicon-music"></h4><br/>Music
@@ -515,7 +515,7 @@ a.list-group-item.active.text-center {
                   <h4 class="glyphicon glyphicon-home"></h4><br/>Hotels
                 </a>
                 <a href="#" class="list-group-item text-center">
-                  <h4 class="glyphicon glyphicon-cutlery"></h4><br/>Restaurants
+                  <h4 class="glyphicon glyphicon-cog"></h4><br/>Logistics
                 </a>
                 <a href="#" class="list-group-item text-center">
                   <h4 class="glyphicon glyphicon-gift"></h4><br/>Registry
@@ -526,9 +526,9 @@ a.list-group-item.active.text-center {
                 <!-- flight section -->
                 <div class="bhoechie-tab-content active">
                     <center>
-                      <h1 class="glyphicon glyphicon-plane" style="font-size:14em;color:#34495e"></h1>
+                      <h1 class="glyphicon glyphicon-th-list" style="font-size:14em;color:#34495e"></h1>
                       <h2 style="margin-top: 0;color:#34495e">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#34495e">Flight Reservation</h3>
+                      <h3 style="margin-top: 0;color:#34495e">Calgary to dos</h3>
                     </center>
                 </div>
                 <!-- train section -->
@@ -550,9 +550,9 @@ a.list-group-item.active.text-center {
                 </div>
                 <div class="bhoechie-tab-content">
                     <center>
-                      <h1 class="glyphicon glyphicon-cutlery" style="font-size:12em;color:#34495e"></h1>
+                      <h1 class="glyphicon glyphicon-cog" style="font-size:12em;color:#34495e"></h1>
                       <h2 style="margin-top: 0;color:#34495e">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#34495e">Restaurant Directory</h3>
+                      <h3 style="margin-top: 0;color:#34495e">Logistics</h3>
                     </center>
                 </div>
                 <div class="bhoechie-tab-content">
