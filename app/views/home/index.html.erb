@@ -62,7 +62,7 @@ function submitGuest()
         <!-- /.container -->
     </nav>
 
-    <section class="intro">
+    <section class="intro"  style="min-height:400px;">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -100,18 +100,18 @@ function submitGuest()
                 
                 <div class="row">
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter left and move 50px over 1.33s" style="min-height:300px;background-color: #f1dbc6;">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xs-offset-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter left and move 50px over 1.5s" style="min-height:300px;background-color: #f1dbc6;">
                     <center>
                     <a href="#adamModal" data-toggle="modal" data-target="#adamModal"><%= image_tag('adam150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %></a>
-                    <h3>Adam Cragg</h3>
+                    <h3 class="col-xs-12">Adam Cragg</h3>
                     <!--<em>click my face for more</em>-->
                     </center>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="enter right and move 50px over 1.33s" style="min-height:300px;background-color: #f1dbc6;">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xs-offset-1 col-lg-offset-2 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="enter right and move 50px over 1.5s" style="min-height:300px;background-color: #f1dbc6;">
                     <center>
                     <a href="#meredithModal" data-toggle="modal" data-target="#meredithModal"><%= image_tag('meredithran150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %></a>
-                    <h3>Meredith Bragg</h3>
+                    <h3 class="col-xs-12">Meredith Bragg</h3>
                     <!--<em>click my face for more</em>-->
                     </center>
                 </div>
@@ -119,7 +119,7 @@ function submitGuest()
 
                 <div class="row">
 
-                <div class="" data-scroll-reveal="wait .8s, then enter right and move 200px over 1.5s">
+                <div class="" data-scroll-reveal="wait 1.5s, then enter right and move 200px over 1s">
                 <div data-parent="#accordion" href="#nineYears">
                 <%= image_tag('pig.gif', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0', :id =>'flypig') %>
                 </div>
@@ -178,12 +178,6 @@ div#sidebarAd.cleanslate {
 
 .project-header {
     margin-bottom:1em
-}
-
-@media screen and (max-width: 767px) {
-.polaroids li:nth-child(n+5) {
-    display:none
-}
 }
 
 ul.polaroids li {
@@ -290,48 +284,48 @@ ul.polaroids li a:hover {
     position:relative;
     z-index:5
 }</style>
-<ul class="polaroids col-sm-12 col-xs-12 col-md-12 col-lg-12">
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<ul class="polaroids col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0px;margin:0px;">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year one" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/first.jpg">
 <%= image_tag('years/1x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year one") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year two" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/second.jpg">
 <%= image_tag('years/2x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year two") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year three" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/third.jpg">
 <%= image_tag('years/3x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year three") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year four" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/fourth.jpg">
 <%= image_tag('years/4x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year four") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year five" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/fifth.jpg">
 <%= image_tag('years/5x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year five") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year six" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/sixth.jpg">
 <%= image_tag('years/6x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year six") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year seven" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/seventh.jpg">
 <%= image_tag('years/7x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year seven") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year eight" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/eighth.jpg">
 <%= image_tag('years/8x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year eight") %>
 </a>
 </li>
-<li class="col-sm-12 col-xs-12 col-md-6 col-lg-4">
+<li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year nine" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/ninth.jpg">
 <%= image_tag('years/9x200.jpg', :class=>'img-responsive', :style=>"max-height:200px", :alt=>"Year nine") %>
 </a>
@@ -484,7 +478,7 @@ ul.polaroids li a:hover {
             //padding-bottom: -50px !important;
         }
         div.download-section {
-            height: 400px;
+            height: 450px;
         }
     </style>
     <section id="ceremony" class="content-section text-center">
