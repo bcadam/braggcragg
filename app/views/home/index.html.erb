@@ -8,7 +8,13 @@ a.btn.btn-success.btn-lg {
     border-color: #dfc296;
 }
 
+.wedding-font
+{
+    font-family: 'Sorts Mill Goudy', serif !important;
+}
+
 </style>
+<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 Parse.initialize("tmbHbRvyZ5tjZ6LdLliNRu0novLMVKGhxiNkivNw", "jRKtFNLAC7k1uEKrtUuvi5ECeja9yHukEuljiZ6o");
 
@@ -131,7 +137,7 @@ function submitGuest()
                 <div class="closedown col-lg-4 col-md-4 col-sm-4 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter left and move 50px over 1.5s" style="min-height:300px;background-color: #f1dbc6;">
                     <center>
                     <a href="#adamModal" data-toggle="modal" data-target="#adamModal"><%= image_tag('adam150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %></a>
-                    <h3 class="col-xs-12">Adam Cragg</h3>
+                    <h3 class="col-xs-12 wedding-font">Adam Cragg</h3>
                     <!--<em>click my face for more</em>-->
                     </center>
                 </div>
@@ -139,7 +145,7 @@ function submitGuest()
                 <div class="closedown col-lg-4 col-md-4 col-sm-4 col-xs-6 col-lg-offset-2 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="enter right and move 50px over 1.5s" style="min-height:300px;background-color: #f1dbc6;">
                     <center>
                     <a href="#meredithModal" data-toggle="modal" data-target="#meredithModal"><%= image_tag('meredithran150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %></a>
-                    <h3 class="col-xs-12">Meredith Bragg</h3>
+                    <h3 class="col-xs-12 wedding-font">Meredith Bragg</h3>
                     <!--<em>click my face for more</em>-->
                     </center>
                 </div>
@@ -161,7 +167,7 @@ function submitGuest()
     <div id="nineYears" class="panel-collapse">
       <div class="panel-body" style="border:0px;">
         <div class="row">
-        <h4 class="modal-title text-up" id="myModalLabel">9 years in the making</h4>
+        <h4 class="modal-title text-up wedding-font" id="myModalLabel"><span style="font-size:30pt">9</span> years in the making</h4>
                 <!-- References: https://github.com/fancyapps/fancyBox -->
                         <link rel="stylesheet" href="http://frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
                         <script src="http://frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
@@ -379,12 +385,12 @@ a.thumbnail.fancybox {
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title" id="myModalLabel">More About Adam</h4>
+                                <h4 class="modal-title" id="myModalLabel" style="">More About Adam</h4>
                                 </div>
                             <div class="modal-body">
                                 <center>
                                 <%= image_tag('adamholi150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %>
-                                <h3 class="media-heading">Adam Cragg <small>USA</small></h3>
+                                <h3 class="media-heading wedding-font" style="padding-top:5px;">Adam Cragg <small>USA</small></h3>
                                 <!--<span><strong>Skills: </strong></span>
                                     <span class="label label-warning">HTML5/CSS</span>
                                     <span class="label label-info">Adobe CS 5.5</span>
@@ -392,7 +398,7 @@ a.thumbnail.fancybox {
                                     <span class="label label-success">Windows XP, Vista, 7</span>-->
                                 </center>
                                 <hr>
-                                <center>
+                                <center class="wedding-font">
                                 <p class="text-left"><strong>Two truths and a lie</strong><br>
                                     <ul style="list-style-type: disc;">
                                       <li style="text-align:left;">Was born in Japan</li>
@@ -405,7 +411,7 @@ a.thumbnail.fancybox {
                             </div>
                             <div class="modal-footer">
                                 <center>
-                                <button type="button" class="btn btn-info" data-dismiss="modal"><div class="hidden-xs">I've heard enough about Adam</div><div class="visible-xs-*">Close</div></button>
+                                <button type="button" class="btn btn-info" data-dismiss="modal"><div class="hidden-xs">I've heard enough about Adam</div><div class="visible-xs">Close</div></button>
                                 </center>
                             </div>
                         </div>
@@ -423,7 +429,7 @@ a.thumbnail.fancybox {
                             <div class="modal-body">
                                 <center>
                                 <%= image_tag('meredithran150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %>
-                                <h3 class="media-heading">Meredith <small>CAN</small></h3>
+                                <h3 class="media-heading wedding-font" style="padding-top:5px;">Meredith <small>CAN</small></h3>
                                 <!--<span><strong>Skills: </strong></span>
                                     <span class="label label-warning">HTML5/CSS</span>
                                     <span class="label label-info">Adobe CS 5.5</span>
@@ -431,7 +437,7 @@ a.thumbnail.fancybox {
                                     <span class="label label-success">Windows XP, Vista, 7</span>-->
                                 </center>
                                 <hr>
-                                <center>
+                                <center class="wedding-font">
                                 <p class="text-left"><strong>Two truths and a lie</strong><br>
                                     <ul style="list-style-type: disc;">
                                       <li style="text-align:left;">Lived in norway</li>
@@ -444,7 +450,7 @@ a.thumbnail.fancybox {
                             </div>
                             <div class="modal-footer">
                                 <center>
-                                <button type="button" class="btn btn-info" data-dismiss="modal"><div class="hidden-xs">I've heard enough about Meredith</div><div class="visible-xs-*">Close</div></button>
+                                <button type="button" class="btn btn-info" data-dismiss="modal"><div class="hidden-xs">I've heard enough about Meredith</div><div class="visible-xs">Close</div></button>
                                 </center>
                             </div>
                         </div>
@@ -471,21 +477,21 @@ a.thumbnail.fancybox {
             <div class="container">
                 <div class="col-lg-8" data-scroll-reveal="enter right and move 50px over 1.33s">
                     <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Our Wedding</h2>
-                    <p>The ceremony will begin at 5pm with cocktails, dinner, and dancing to follow.</p>
+                    <h2 class="wedding-font">Our Wedding</h2>
+                    <p class="wedding-font">The ceremony will begin at 5pm with cocktails, dinner, and dancing to follow.</p>
                     </div>
                     <!--<a href="http://www.bvrrestaurant.com/" class="btn btn-default btn-lg">Visit the Venue</a>-->
                 </div>
                 <div class="col-lg-4" data-scroll-reveal="enter right and move 50px over 1.33s">
                     <div class="col-lg-12">
                         <div class="row">
-                            <p><b>Where:</b> The Bow Valley Ranche</p>
+                            <p class="wedding-font"><b>Where:</b> The Bow Valley Ranche</p>
                         </div>                  
                         <div class="row">
-                            <p><b>When:</b> July 18th, 2015 at 5pm</p>
+                            <p class="wedding-font"><b>When:</b> July 18th, 2015 at 5pm</p>
                         </div>  
                     </div>
-                    <a href="http://www.bvrrestaurant.com/" target="_blank" class="btn btn-success btn-lg">See the Venue</a>
+                    <a href="http://www.bvrrestaurant.com/" target="_blank" class="wedding-font btn btn-success btn-lg">See the Venue</a>
                 </div>
             </div>
         </div>
@@ -594,20 +600,20 @@ a.thumbnail.fancybox {
         <div class="col-lg-5 col-md-5 col-sm-8 col-xs-9 bhoechie-tab-container">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
               <div class="list-group">
-                <a href="#" class="list-group-item active text-center">
-                  <h4 class="glyphicon glyphicon-camera"></h4><br/>Calgary
+                <a href="#" class="list-group-item active text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-camera" style="text-transform:uppercase !important;"></h4><br/>Calgary
                 </a>
-                <a href="#" class="list-group-item text-center">
-                  <h4 class="glyphicon glyphicon-music"></h4><br/>Music
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-music" style="text-transform:uppercase !important;"></h4><br/>Music
                 </a>
-                <a href="#" class="list-group-item text-center">
-                  <h4 class="glyphicon glyphicon-home"></h4><br/>Hotels
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-home" style="text-transform:uppercase !important;"></h4><br/>Hotels
                 </a>
-                <a href="#" class="list-group-item text-center">
-                  <h4 class="glyphicon glyphicon-cog"></h4><br/>Logistics
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-cog" style="text-transform:uppercase !important;"></h4><br/>Logistics
                 </a>
-                <a href="#" class="list-group-item text-center">
-                  <h4 class="glyphicon glyphicon-gift"></h4><br/>Registry
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-gift" style="text-transform:uppercase !important;"></h4><br/>Registry
                 </a>
               </div>
             </div>
@@ -616,39 +622,39 @@ a.thumbnail.fancybox {
                 <div class="bhoechie-tab-content active">
                     <center>
                       <h1 class="glyphicon glyphicon-camera" style="font-size:14em;color:#c08879"></h1>
-                      <h2 style="margin-top: 0;color:#c08879">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#c08879">In and around Calgary</h3>
+                      <h2 style="margin-top: 0;color:#c08879;" class="wedding-font">Coming Soon</h2>
+                      <h3 style="margin-top: 0;color:#c08879;" class="wedding-font">In and around Calgary</h3>
                     </center>
                 </div>
                 <!-- train section -->
                 <div class="bhoechie-tab-content">
                     <center>
-                      <h1 class="glyphicon glyphicon-music" style="font-size:12em;color:#c08879"></h1>
-                      <h2 style="margin-top: 0;color:#c08879">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#c08879">Music Request</h3>
+                      <h1 class="glyphicon glyphicon-music" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Coming Soon</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">Music Request</h3>
                     </center>
                 </div>
     
                 <!-- hotel search -->
                 <div class="bhoechie-tab-content">
                     <center>
-                      <h1 class="glyphicon glyphicon-home" style="font-size:12em;color:#c08879"></h1>
-                      <h2 style="margin-top: 0;color:#c08879">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#c08879">Hotel Directory</h3>
+                      <h1 class="glyphicon glyphicon-home" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Coming Soon</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">Hotel Directory</h3>
                     </center>
                 </div>
                 <div class="bhoechie-tab-content">
                     <center>
-                      <h1 class="glyphicon glyphicon-cog" style="font-size:12em;color:#c08879"></h1>
-                      <h2 style="margin-top: 0;color:#c08879">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#c08879">Logistics</h3>
+                      <h1 class="glyphicon glyphicon-cog" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Coming Soon</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">Logistics</h3>
                     </center>
                 </div>
                 <div class="bhoechie-tab-content">
                     <center>
-                      <h1 class="glyphicon glyphicon-gift" style="font-size:12em;color:#c08879"></h1>
-                      <h2 style="margin-top: 0;color:#c08879">Coming Soon</h2>
-                      <h3 style="margin-top: 0;color:#c08879">Registry</h3>
+                      <h1 class="glyphicon glyphicon-gift" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Coming Soon</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">Registry</h3>
                     </center>
                 </div>
             </div>
@@ -695,7 +701,7 @@ a.thumbnail.fancybox {
             <div class="col-lg-12">
                 <form action="#" method="post" class="form">
                 <div class="get-in-touch">
-                    <h3 class="text-center">
+                    <h3 class="text-center wedding-font">
                         Drop a line</h3>
                     <div class="form-group">
                         <input type="text" class="form-control" id="name" placeholder="Name" required/>
@@ -707,7 +713,7 @@ a.thumbnail.fancybox {
                         <textarea class="form-control" rows="3" placeholder="Message" id="message" required></textarea>
                     </div>
                     <div  id="sentalert" href="" class="btn btn-success btn-lg btn-block" style="display:none;">Sent!</div>
-                    <div  id="sendalert" href="" class="btn btn-danger btn-lg btn-block" role="button" onclick="submitGuest();">Send it!</div>
+                    <div  id="sendalert" href="" class="btn btn-danger btn-lg btn-block wedding-font" role="button" onclick="submitGuest();">Send it!</div>
                     
                 </div>
                 </form>
