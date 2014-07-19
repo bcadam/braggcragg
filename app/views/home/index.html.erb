@@ -19,7 +19,9 @@ function submitGuest()
     guestObject.save({name: username, email:useremail, message:usermessage}).then(function(object) {
         //alert("it worked");
 
-    $('#contact').css('display','none');
+    //$('#contact').animate().css('display','none');
+    $('#plan').gotoAnchor();
+
 });
 }
 
@@ -50,7 +52,7 @@ function submitGuest()
                         <a href="#ceremony">07/18/15</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#newanchor">Plan</a>
+                        <a href="#plan">Plan</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -80,15 +82,16 @@ function submitGuest()
         </div>
     </section>
 
-    <style type="text/css">
-        #about{
-            background-color: #f1dbc6;
-            padding-bottom: -50px !important;
-            padding-top: 80px;
-            width: 100%;
-        }
-    </style>
+    
     <section id="about" class="container content-section text-center">
+        <style type="text/css">
+            #about{
+                background-color: #f1dbc6;
+                padding-bottom: -50px !important;
+                padding-top: 80px;
+                width: 100%;
+            }
+        </style>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <!--<h2>About Grayscale</h2>
@@ -99,6 +102,7 @@ function submitGuest()
 
                 
                 <div class="row">
+
 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xs-offset-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter left and move 50px over 1.5s" style="min-height:300px;background-color: #f1dbc6;">
                     <center>
@@ -416,60 +420,12 @@ ul.polaroids li a:hover {
                         </div>
                     </div>
                 </div>
-
-                <!-- Pig Modal -->
-                <div class="modal fade" id="pigModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title" id="myModalLabel">9 years in the making</h4>
-                                </div>
-                            <div class="modal-body">
-                                <!--<center>
-                                <%#= image_tag('adamholi150.jpg', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0') %>
-                                <h3 class="media-heading">Adam Cragg <small>USA</small></h3>
-                                <span><strong>Skills: </strong></span>
-                                    <span class="label label-warning">HTML5/CSS</span>
-                                    <span class="label label-info">Adobe CS 5.5</span>
-                                    <span class="label label-info">Microsoft Office</span>
-                                    <span class="label label-success">Windows XP, Vista, 7</span>
-                                </center>
-                                <hr>-->
-                                <center>
-                                <div class="row">
-                                <style type="text/css">
-                                a.thumbnail.fancybox {
-                                    border-style: none;
-                                }
-                                </style>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/first.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/second.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/third.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/fouth.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/fifth.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/sixth.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/seventh.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/eighth.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6"><%= image_tag('years/ninth.jpg', :class=>'img-responsive', :style=>"max-height:100px") %></div>
-                                </div>
-                                </center>
-                            </div>
-                            <div class="modal-footer">
-                                <center>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Shut'er down</button>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END OF PIG MODAL -->
-
             </div>
-
         </div>
     </section>
 
+    
+    <section id="ceremony" class="content-section text-center">
     <style type="text/css">
         #ceremony{
             //min-height:1200px !important;
@@ -481,7 +437,6 @@ ul.polaroids li a:hover {
             height: 450px;
         }
     </style>
-    <section id="ceremony" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8" data-scroll-reveal="enter right and move 50px over 1.33s">
@@ -504,11 +459,9 @@ ul.polaroids li a:hover {
                 </div>
             </div>
         </div>
-        <div id='newanchor' style=""></div>
-    </section>
-
-
-    <style type="text/css">
+        <div id='plan' style="">
+            
+<style type="text/css">
     #itin{
         width:100%;
 
@@ -519,91 +472,93 @@ ul.polaroids li a:hover {
     }
 
 
-/*  bhoechie tab */
-div.bhoechie-tab-container{
-  z-index: 10;
-  background-color: #ffffff;
-  padding: 0 !important;
-    border-radius: 0px !important;
-  //-moz-border-radius: 0px;
-  //border:1px solid #ddd;
-  margin-top: 0px;
-  margin-left: 0%;
-  width:100%;
-  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  background-clip: padding-box;
-  opacity: 0.97;
-  filter: alpha(opacity=97);
-}
-div.bhoechie-tab-menu{
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0;
-}
-div.bhoechie-tab-menu div.list-group{
-  margin-bottom: 0;
-}
-div.bhoechie-tab-menu div.list-group>a{
-  margin-bottom: 0;
-}
-div.bhoechie-tab-menu div.list-group>a .glyphicon,
-div.bhoechie-tab-menu div.list-group>a .fa {
-  color: #c08879;
-}
-div.bhoechie-tab-menu div.list-group>a:first-child{
-     border-radius: 0px !important;
+    /*  bhoechie tab */
+    div.bhoechie-tab-container{
+      z-index: 10;
+      background-color: #ffffff;
+      padding: 0 !important;
+        border-radius: 0px !important;
+      //-moz-border-radius: 0px;
+      //border:1px solid #ddd;
+      margin-top: 0px;
+      margin-left: 0%;
+      width:100%;
+      -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      background-clip: padding-box;
+      opacity: 0.97;
+      filter: alpha(opacity=97);
+    }
+    div.bhoechie-tab-menu{
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+    div.bhoechie-tab-menu div.list-group{
+      margin-bottom: 0;
+    }
+    div.bhoechie-tab-menu div.list-group>a{
+      margin-bottom: 0;
+    }
+    div.bhoechie-tab-menu div.list-group>a .glyphicon,
+    div.bhoechie-tab-menu div.list-group>a .fa {
+      color: #c08879;
+    }
+    div.bhoechie-tab-menu div.list-group>a:first-child{
+         border-radius: 0px !important;
 
-}
-div.bhoechie-tab-menu div.list-group>a:last-child{
-      border-radius: 0px !important;
+    }
+    div.bhoechie-tab-menu div.list-group>a:last-child{
+          border-radius: 0px !important;
 
-}
-div.bhoechie-tab-menu div.list-group>a.active,
-div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
-div.bhoechie-tab-menu div.list-group>a.active .fa{
-  background-color: #c08879;
-  background-image: #c08879;
-  color: #ffffff;
-}
-div.bhoechie-tab-menu div.list-group>a.active:after{
-  content: '';
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin-top: -13px;
-      border-radius: 0px !important;
+    }
+    div.bhoechie-tab-menu div.list-group>a.active,
+    div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+    div.bhoechie-tab-menu div.list-group>a.active .fa{
+      background-color: #c08879;
+      background-image: #c08879;
+      color: #ffffff;
+    }
+    div.bhoechie-tab-menu div.list-group>a.active:after{
+      content: '';
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      margin-top: -13px;
+          border-radius: 0px !important;
 
-}
+    }
 
-div.bhoechie-tab-content{
-  background-color: #ffffff;
-  /* border: 1px solid #eeeeee; */
-  padding-left: 20px;
-  padding-top: 10px;
-}
+    div.bhoechie-tab-content{
+      background-color: #ffffff;
+      /* border: 1px solid #eeeeee; */
+      padding-left: 20px;
+      padding-top: 10px;
+    }
 
-div.bhoechie-tab div.bhoechie-tab-content:not(.active){
-  display: none;
-}
+    div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+      display: none;
+    }
 
-a.list-group-item.active.text-center {
-    border-radius: 0px !important;
-}
-</style>
-<script type="text/javascript">
-    $(document).ready(function() {
-    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
-        e.preventDefault();
-        $(this).siblings('a.active').removeClass("active");
-        $(this).addClass("active");
-        var index = $(this).index();
-        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
-        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    a.list-group-item.active.text-center {
+        border-radius: 0px !important;
+    }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+            e.preventDefault();
+            $(this).siblings('a.active').removeClass("active");
+            $(this).addClass("active");
+            var index = $(this).index();
+            $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+            $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+        });
     });
-});
-</script>
+    </script>
+
    <div id="itin" class="container">
     <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-8 col-xs-9 bhoechie-tab-container">
@@ -672,35 +627,42 @@ a.list-group-item.active.text-center {
 </div>
 
 
-    <section id="contact" class="container content-section text-center" style="width:100%;height:100%;">
-        <style type="text/css">
-        #contact{
-            height:300px !important;
-            background: rgb(255,255,255);
-            padding-top: 60px;
-            padding-bottom: 50px;
-        }
-        .get-in-touch {
-            position: relative;
-            margin: 0 auto;
-            padding: 30px;
-            max-width: 370px;
-            border-radius: 2px;
-            background: rgb(255, 255, 255) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAGCAYAAACFIR03AAAAV0lEQVR42tXOMRWAQAwE0RWFDRTg5d47Jeg4Q9gI06RbqlwKil/P6LpXbDCf85AxEBtMGjKG/jyPUHUerfP4nEeoOo/Wedj5pOo8Wudh55Oq82idh51PLxpvled7kLAXAAAAAElFTkSuQmCC) repeat-x;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
 
-        .get-in-touch input[type=text],.get-in-touch input[type=email], .get-in-touch textarea {
-            background: rgb(235, 241, 245);
-            color: rgb(36, 39, 41);
-        }
-        .get-in-touch  input:focus, .get-in-touch  textarea:focus {
-            outline: 0;
-            background: #FFF;
-        }
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="container content-section text-center" style="background-color: #f0c59c;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nNCc+Cgk8ZGVmcyBpZD0nZGVmczQnPgoJCTxmaWx0ZXIgeT0nMCcgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSdzUkdCJyBpZD0ndCc+CgkJCTxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScuOCAwJyByZXN1bHQ9J291dDEnIG51bU9jdGF2ZXM9JzEnLz4KCQkJPGZlQ29sb3JNYXRyaXggdHlwZT0nc2F0dXJhdGUnIGluPSdvdXQxJyByZXN1bHQ9J291dDInIHZhbHVlcz0nMCcvPgoJCQk8ZmVDb21wb3NpdGUgb3BlcmF0b3I9J2FyaXRobWV0aWMnIGsxPScwJyBrMj0nMC4yNCcgazM9JzAnIGs0PScwJyBpbj0nb3V0MicgaW4yPSdvdXQxJy8+CgkJPC9maWx0ZXI+Cgk8L2RlZnM+Cgk8cmVjdCBmaWxsPScjY2Y4MzEwJyBmaWxsLW9wYWNpdHk9JzAuMjA2MDAwMDAwMDAwMDAwMDInIHg9JzUlJyB5PSctNSUnIHdpZHRoPScxMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nI2NmODMxMCcgZmlsbC1vcGFjaXR5PScwLjA4MjQnIHg9JzYlJyB5PSctNSUnIHdpZHRoPScxMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nI2NmODMxMCcgZmlsbC1vcGFjaXR5PScwLjA4MjQnIHg9JzclJyB5PSctNSUnIHdpZHRoPScxNCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nI2NmODMxMCcgZmlsbC1vcGFjaXR5PScwLjA4MjQnIHg9JzklJyB5PSctNSUnIHdpZHRoPScyMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nI2NmODMxMCcgZmlsbC1vcGFjaXR5PScwLjA4MjQnIHg9JzExJScgeT0nLTUlJyB3aWR0aD0nMTAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyNjZjgzMTAnIGZpbGwtb3BhY2l0eT0nMC4xNjQ4JyB4PSc1NSUnIHk9Jy01JScgd2lkdGg9JzQwJScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBmaWxsPScjY2Y4MzEwJyBmaWxsLW9wYWNpdHk9JzAuMDYxOCcgeD0nNjIlJyB5PSctNSUnIHdpZHRoPSczNSUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nI2NmODMxMCcgZmlsbC1vcGFjaXR5PScwLjE0NDIwMDAwMDAwMDAwMDAyJyB4PSczOCUnIHk9Jy01JScgd2lkdGg9JzIwJScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBmaWxsPScjY2Y4MzEwJyBmaWxsLW9wYWNpdHk9JzAuMDYxOCcgeD0nODUlJyB5PSctNSUnIHdpZHRoPSc0MCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nI2NmODMxMCcgZmlsbC1vcGFjaXR5PScwLjEwMzAwMDAwMDAwMDAwMDAxJyB4PSc1MiUnIHk9Jy01JScgd2lkdGg9JzQwJScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBzdHlsZT0nZmlsdGVyOnVybCgjdCknIHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDAlJy8+Cjwvc3ZnPg==');height:500px !important;width:100%;padding-bottom:0px;margin-bottom:0px;">
+        <style type="text/css">
+            #contact{
+                height:300px !important;
+                background: rgb(255,255,255);
+                padding-top: 60px;
+                padding-bottom: 50px;
+            }
+            .get-in-touch {
+                position: relative;
+                margin: 0 auto;
+                padding: 30px;
+                max-width: 370px;
+                border-radius: 2px;
+                background: rgb(255, 255, 255) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAGCAYAAACFIR03AAAAV0lEQVR42tXOMRWAQAwE0RWFDRTg5d47Jeg4Q9gI06RbqlwKil/P6LpXbDCf85AxEBtMGjKG/jyPUHUerfP4nEeoOo/Wedj5pOo8Wudh55Oq82idh51PLxpvled7kLAXAAAAAElFTkSuQmCC) repeat-x;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .get-in-touch input[type=text],.get-in-touch input[type=email], .get-in-touch textarea {
+                background: rgb(235, 241, 245);
+                color: rgb(36, 39, 41);
+            }
+            .get-in-touch  input:focus, .get-in-touch  textarea:focus {
+                outline: 0;
+                background: #FFF;
+            }
+
         </style>
 
-        <div class="row">
+        <div class="row" style="">
             <div class="col-mid-6">
                 <form action="#" method="post" class="form">
                 <div class="get-in-touch">
@@ -724,24 +686,25 @@ a.list-group-item.active.text-center {
 
     </section>
 
-    <section id="map" class="container content-section text-center">
-    <div class="row">
-    <div id="map"></div>
-    </div>
+    <section id="map" class="container content-section text-center" style="margin:0px;padding:0px;">
+        <div class="row">
+            <div id="map"></div>
+        </div>
     </section>
 
     <!-- Core JavaScript Files -->
     
 
     <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOepzxjGRga59rqfFQj6oCqGUG4XqQmfs&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOepzxjGRga59rqfFQj6oCqGUG4XqQmfs&sensor=false">
+    </script>
 
     <!-- Custom Theme JavaScript -->
 
 
-<script src="http://scrollrevealjs.org/js/scrollReveal.min.js?ver=0.2.0-rc.1"></script>
-  <%= javascript_include_tag "grayscale" %>
-  <script src="/assets/grayscale.js"></script>
+    <script src="http://scrollrevealjs.org/js/scrollReveal.min.js?ver=0.2.0-rc.1"></script>
+    <%= javascript_include_tag "grayscale" %>
+    <script src="/assets/grayscale.js"></script>
 
     <script type="text/javascript">
       (function($) {
