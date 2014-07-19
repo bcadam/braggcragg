@@ -20,7 +20,13 @@ function submitGuest()
         //alert("it worked");
 
     //$('#contact').animate().css('display','none');
-    $('#plan').gotoAnchor();
+    //$('#plan').gotoAnchor();
+
+    $('#sentalert').css('display','block');
+    $('#sendalert').css('display','none');
+    
+    $('#sendalert').closest('form').find("input[type=text], textarea,input[type=email]").val("");
+
 
 });
 }
@@ -131,7 +137,7 @@ function submitGuest()
 
                 <div class="row">
 
-                <div class="" data-scroll-reveal="wait 1.5s, then enter right and move 200px over 1s">
+                <div class="" data-scroll-reveal="wait .75s, then enter right and move 200px over 1s">
                 <div data-parent="#accordion" href="#nineYears">
                 <%= image_tag('pig.gif', :class => "img-circle", :width => '140', :height => '140', :name => 'aboutme', :border => '0', :id =>'flypig') %>
                 </div>
@@ -295,7 +301,13 @@ ul.polaroids li a:hover {
     -moz-box-shadow:0 3px 6px rgba(0,0,0,.5);
     position:relative;
     z-index:5
-}</style>
+}
+
+a.thumbnail.fancybox {
+    border-style: none;
+}
+
+</style>
 <ul class="polaroids col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding:0px;margin:0px;">
 <li class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
 <a title="Year one" class="thumbnail fancybox" rel="ligthbox" href="/assets/years/first.jpg">
@@ -670,8 +682,7 @@ ul.polaroids li a:hover {
 
         </style>
 
-        <div class="row" style="">
-            <div class="col-mid-6">
+            <div class="col-lg-12">
                 <form action="#" method="post" class="form">
                 <div class="get-in-touch">
                     <h3 class="text-center">
@@ -685,11 +696,14 @@ ul.polaroids li a:hover {
                     <div class="form-group">
                         <textarea class="form-control" rows="3" placeholder="Message" id="message" required></textarea>
                     </div>
-                    <a href="#about" class="btn btn-danger btn-sm btn-block" role="button" onclick="submitGuest();">Send it!</a>
+                    <div  id="sentalert" href="" class="btn btn-success btn-lg btn-block" style="display:none;">Sent!</div>
+                    <div  id="sendalert" href="" class="btn btn-danger btn-lg btn-block" role="button" onclick="submitGuest();">Send it!</div>
+                    
                 </div>
                 </form>
+                
             </div>
-        </div>
+            
 
 
     </section>
