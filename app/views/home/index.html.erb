@@ -13,6 +13,7 @@
   ga('send', 'pageview');
 
 </script>
+
 <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 
@@ -64,6 +65,8 @@ function submitSong()
 
 
 });
+
+    // document.getElementsById("contactform").setAttribute("data-scroll-reveal", "ease-out");
 }
 
 
@@ -129,15 +132,13 @@ function submitSong()
 
     <!-- Custom Theme JavaScript -->
 
-
-    <script src="http://scrollrevealjs.org/js/scrollReveal.min.js?ver=0.2.0-rc.1"></script>
     <%= javascript_include_tag "grayscale" %>
     <script src="/assets/grayscale.js"></script>
 
-    <script type="text/javascript">
-      (function($) {
+    <script>
 
-        'use strict';
-        window.scrollReveal = new scrollReveal({ reset: false, move: '100px' });
-      })();
+    var config = { mobile: false };
+    
+      window.sr = new scrollReveal(config);
+
     </script>
