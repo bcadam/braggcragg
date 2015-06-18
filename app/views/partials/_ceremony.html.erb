@@ -1,0 +1,129 @@
+<section id="ceremony" class="content-section text-center">
+        
+
+
+        
+        <div id='plan' style="">
+            
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+            e.preventDefault();
+            $(this).siblings('a.active').removeClass("active");
+            $(this).addClass("active");
+            var index = $(this).index();
+            $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+            $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+        });
+    });
+    </script>
+
+   <div id="itin" class="container">
+    <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-8 col-xs-9 bhoechie-tab-container">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+              <div class="list-group">
+                <a href="#" class="list-group-item active text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-camera" style="text-transform:uppercase !important;"></h4><br/>Calgary
+                </a>
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-music" style="text-transform:uppercase !important;"></h4><br/>Music
+                </a>
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-home" style="text-transform:uppercase !important;"></h4><br/>Hotels
+                </a>
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-cog" style="text-transform:uppercase !important;"></h4><br/>Logistics
+                </a>
+                <a href="#" class="list-group-item text-center wedding-font">
+                  <h4 class="glyphicon glyphicon-gift" style="text-transform:uppercase !important;"></h4><br/>Registry
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+                <!-- flight section -->
+                <div class="bhoechie-tab-content active">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+                          <h2 style="color:#c08879;" class="wedding-font">Friday</h2>
+<!--                       <h1 class="glyphicon glyphicon-camera" style="font-size:14em;color:#c08879"></h1>
+ -->                      <p style="margin-top: 0;color:#c08879;" class="wedding-font">Dinner Suggestions</p>
+                            <p style="font-size:15px;"><a href="http://anju.ca/" target="_blank">Anju Korean Tapas</a></p>
+                            <p style="font-size:15px;"><a href="http://anejo.ca/" target="_blank">Anejo Mexican</a></p>
+                            <p style="font-size:15px;"><a href="http://www.charcut.com/" target="_blank">Charcut</a></p>
+
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+                          <h2 style="color:#c08879;" class="wedding-font">Saturday</h2>
+<!--                       <h1 class="glyphicon glyphicon-camera" style="font-size:14em;color:#c08879"></h1>
+ -->                      <p style="margin-top: 0;color:#c08879;" class="wedding-font">Activities</p>
+                            <p style="font-size:15px;"><a href="http://www.tripadvisor.com/Attraction_Review-g181727-d1907327-Reviews-Grassi_Lakes-Canmore_Kananaskis_Country_Alberta.html" target="_blank">Grassi Lakes Hike</a></p>
+                            <p style="font-size:15px;"><a href="http://www.tripadvisor.com/Attraction_Review-g154913-d155544-Reviews-Calgary_Tower-Calgary_Alberta.html" target="_blank">Calgary Tower</a></p>
+                            <p style="font-size:15px;"><a href="http://www.17thave.ca/" target="_blank">Shop, eat, and drink along 17th Ave</a></p>
+
+                      </div>
+                </div>
+                <!-- train section -->
+                <div class="bhoechie-tab-content">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <h1 class="glyphicon glyphicon-music" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Music Request</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font"></h3>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      
+                      <form action="#" method="post" class="form">
+                <div class="">
+                    <h3 class="text-center wedding-font">
+                        </h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="song" class="form-control" id="song" placeholder="Song Title" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="artist" class="form-control" id="artist" placeholder="Artist" required />
+                    </div>
+                    <div  id="sentsong" href="" class="btn btn-success btn-lg btn-block" style="display:none;">Sent!</div>
+                    <div  id="sendsong" href="" class="btn btn-danger btn-lg btn-block wedding-font" role="button" onclick="submitSong();">Send it!</div>
+                    
+                </div>
+                </form>
+
+                    </div>
+                </div>
+    
+                <!-- hotel search -->
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-home" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Grand Hyatt</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">We have a <a href="http://bit.ly/1ArXt0T">special rate</a> at the Grand Hyatt. This rate is available from July 17th through the 20th. </h3>
+                    </center>
+                </div>
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-cog" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Coming Soon</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">Logistics</h3>
+                    </center>
+                </div>
+                <div class="bhoechie-tab-content">
+                    <center>
+                      <h1 class="glyphicon glyphicon-gift" style="font-size:14em;color:#c08879"></h1>
+                      <h2 style="margin-top: 0;color:#c08879" class="wedding-font">Registry</h2>
+                      <h3 style="margin-top: 0;color:#c08879" class="wedding-font">We're registered at this <a href="http://www.zola.com/registry/braggcragg" target="_blank">site.</a></h3>
+                    </center>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+        </div>
+    </section>
