@@ -111,24 +111,11 @@
 
 <script>
 
-//[51.111, -114.803], 9
+//51.111, -114.803, 9
 
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWRhbSIsImEiOiJFT1ZJaUprIn0.xeQ750OlIDJjVL6M8LUung';
-
-var southWest = L.latLng(50.85, -116.9),
-    northEast = L.latLng(52.5, -113.4),
-    bounds = L.latLngBounds(southWest, northEast);
-
-
-var map = L.mapbox.map('map', 'adam.mg4f13i9', {
-    // set that bounding box as maxBounds to restrict moving the map
-    // see full maxBounds documentation:
-    // http://leafletjs.com/reference.html#map-maxbounds
-    maxBounds: bounds,
-    maxZoom: 17,
-    minZoom: 7
-}).setView(  [51.111, -114.803], 9  );
+var map = L.mapbox.map('map', 'adam.mg4f13i9');
 
 // Find and store a variable reference to the list of filters.
 var filters = document.getElementById('filters');
