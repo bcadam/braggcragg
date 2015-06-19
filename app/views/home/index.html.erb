@@ -13,7 +13,13 @@
   ga('send', 'pageview');
 
 </script>
+<style type="text/css" media="screen">
+    li.page-scroll.active a {
+    color: #b3b3b3;
+}
 
+
+</style>
 <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 
@@ -111,33 +117,28 @@ function submitSong()
     </nav>
 
     <%= render 'partials/intro' %>
-
-    
     <%= render 'partials/about' %>
-
     <%= render 'partials/date' %>
-
+    <%= render 'partials/ceremony' %>
     <%= render 'partials/logistics' %>
-
     <%= render 'partials/contact' %>
-
-    <%= render 'partials/map' %>
+    <%#= render 'partials/map' %>
+    <%= render 'partials/todos' %>
 
     <!-- Core JavaScript Files -->
     
 
     <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOepzxjGRga59rqfFQj6oCqGUG4XqQmfs&sensor=false">
-    </script>
+    
 
     <!-- Custom Theme JavaScript -->
 
     <%= javascript_include_tag "grayscale" %>
     <script src="/assets/grayscale.js"></script>
-    
+
     <script>
 
-    var config = { mobile: false };
+        var config = { mobile: false };
     
       window.sr = new scrollReveal(config);
 
