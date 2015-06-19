@@ -116,8 +116,8 @@
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWRhbSIsImEiOiJFT1ZJaUprIn0.xeQ750OlIDJjVL6M8LUung';
 
-var southWest = L.latLng(50.85, -116.9),
-    northEast = L.latLng(52.5, -113.4),
+var southWest = L.latLng(50, -116.9),
+    northEast = L.latLng(52.2, -113.4),
     bounds = L.latLngBounds(southWest, northEast);
 
 
@@ -128,7 +128,7 @@ var map = L.mapbox.map('map', 'adam.mg4f13i9', {
     maxBounds: bounds,
     maxZoom: 17,
     minZoom: 7
-}).setView(  [51.111, -114.803], 9  );
+}).setView(  [51.111, -114.803], 8  );
 
 // Find and store a variable reference to the list of filters.
 var filters = document.getElementById('filters');
